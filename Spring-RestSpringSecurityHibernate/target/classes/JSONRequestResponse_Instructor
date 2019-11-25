@@ -1,0 +1,122 @@
+Request:
+	http://localhost:8080/instructor/get_instructor
+
+Response:
+	[
+		{
+			"id": 1,
+			"firstName": "ABC",
+			"lastName": "XYZ",
+			"email": "abc@gmail.com",
+			"instructorDetail": {
+				"id": 1,
+				"channel": "ABC",
+				"hobby": "coding"
+			},
+			"courses": [
+				{
+					"id": 10,
+					"title": "hello",
+					"review": []
+				},
+				{
+					"id": 11,
+					"title": "world",
+					"review": []
+				}
+			]
+		},
+		{
+			"id": 4,
+			"firstName": "Adele",
+			"lastName": "hello",
+			"email": "adele@gmail.com",
+			"instructorDetail": {
+				"id": 4,
+				"channel": "helloadele",
+				"hobby": "singing"
+			},
+			"courses": []
+		}
+	]
+
+Request : http://localhost:8080/instructor/get_instructor/1
+
+Response:
+
+{
+    "id": 1,
+    "firstName": "ABC",
+    "lastName": "XYZ",
+    "email": "abc@gmail.com",
+    "instructorDetail": {
+        "id": 1,
+        "channel": "ABC",
+        "hobby": "coding"
+    },
+    "courses": [
+        {
+            "id": 10,
+            "title": "hello",
+            "review": []
+        },
+        {
+            "id": 11,
+            "title": "world",
+            "review": []
+        }
+    ]
+}
+
+//Add course detail for Instructor
+Request:  http://localhost:8080/instructor/add_course
+
+[
+	{	
+		"title":"hello",
+		"instructor":{
+			"id" : 1
+		}
+	},
+	{
+		"title":"world",
+		"instructor":{
+			"id" : 1
+		}
+	}
+]
+
+
+
+Request:  http://localhost:8080/instructor/add_course_review
+	{	
+		"id":10,
+		"review":[
+			"Introductory course",
+			"Good course! Cheers"
+		]
+	}
+	
+	
+Request: http://localhost:8080/instructor/add_course_student
+{
+	"id" : 11,
+	"studentList":[
+		{
+			"firstName":"Abra",
+			"lastName":"Kadabra",
+			"email":"abrakadabra@gmail.com"
+		},
+		{
+			"firstName":"bhai",
+			"lastName":"cha birthday",
+			"email":"bhai.cha.birthday@gmail.com"
+		}
+	]
+}
+
+
+
+
+
+

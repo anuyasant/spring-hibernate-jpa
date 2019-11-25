@@ -1,0 +1,50 @@
+Project Name							: Spring-RestSpringSecurityHibernate
+Application Java File Path (apppath)	: src\main\java\com\example\demo\SpringRestSpringSecurityHibernate
+File Name								: SpringRestSpringSecurityHibernateApplication.java
+
+
+Controller								: apppath\controller
+Files									: CourseApiController.java
+                                        : InstructorApiController.java
+
+Rest API Client                         : SpringBootRestTestClient.java
+
+DAO										: apppath\dao
+Files 									: CourseDao.java
+										: InstructorDao.java
+										
+DAO Implementation						: apppath\daoImpl
+Files 									: CourseDaoImpl.java
+                                          InstructorDaoImpl.
+										  
+Entity									: apppath\entity
+Files									: Course.java
+                                          Instructor.java
+                                          InstructorDetail.java
+                                          Review.java
+                                          Student.java
+
+Service									: apppath\service
+Files									: CourseService.java
+                                          InstructorService.java
+										  
+Service Implementation					: apppath\serviceImpl
+Files									: CourseServiceImpl.java
+                                          InstructorServiceImpl.java
+
+Util									: apppath\util
+Files									: CustomErrorType.java
+
+Additional Resources files:
+DB Connection Details					: application.properties
+Testing JSON Request/Response 			: JSONRequestResponse_Course
+										  JSONRequestResponse_Instructor
+Creating DB Tables						: Spring-RestSpringSecurityHibernate.sql
+
+
+Implementation details:
+	Base URL : "http://localhost:8080/"
+	
+All the API calls handled for Instructor use Hibernate API for data access.
+All the API calls handled for Course use JPA for data access.
+All the API calls handled for Employee use Spring Data JPA and Composite Primary key for data access.

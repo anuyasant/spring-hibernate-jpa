@@ -1,0 +1,16 @@
+Request: GET: http://localhost:8080/course/course
+
+Request: GET: http://localhost:8080/course/course/10
+
+Request: POST: http://localhost:8080/course/course
+{
+    "title": "Java Course"
+}
+
+Request: PUT: http://localhost:8080/course/course
+{
+	"id":13,
+    "title": "Java Course Beginner"
+}
+
+Request: DELETE: http://localhost:8080/course/course/13
